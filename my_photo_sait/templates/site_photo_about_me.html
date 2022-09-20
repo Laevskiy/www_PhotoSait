@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обо мне </title>
+    <link rel="stylesheet" href={%static "style_01.css" %}>
+    <style>
+
+    </style>
+</head>
+<body>
+  <div class = 'wrapper'>
+        <div class=  'box_left ob'>
+            <img src = {%static 'img/photo_for_site/photo_s_2.001.jpg' %}>;
+        </div>
+        <div class = 'box_head ob'>
+            <div class = "leable">Лейбла</div>
+            <div class = 'but'>
+                <div class="dropdown">
+                <button class="dropbtn ob_btn"> Портфолио </button>
+                    <div class="dropdown-content">
+                        <a href="#"><button>Свадьбы</button></a>
+                        <a href="#"><button>LoveStory</button></a>
+                        <a href="#"><button>Портреты</button></a>
+                    </div>
+                </div>
+
+                <button class = 'about_me ob_btn' onclick= "location.href = '/'">Главная</button>
+                <button class = 'price ob_btn' onclick= "location.href = '/price'">Стоимость</button>
+                <button class = 'contacts ob_btn'>Контакты</button>
+
+            </div>
+        </div>
+        <div class = 'box_main_02 ob'><h1>Обо мне  </h1>
+             <p>Тут будет текс обо мне</p>
+        </div>
+        <div class = 'box_under ob'>box_under</div>
+
+  </div>

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Цены</title>
+    <link rel="stylesheet" href={%static "style_01.css" %}>
+    <style>
+
+    </style>
+</head>
+<body>
+  <div class = 'wrapper'>
+        <div class=  'box_left ob'>
+            <img src = {%static 'img/photo_for_site/photo_s_3.001.jpg' %}>;
+        </div>
+        <div class = 'box_head ob'>
+            <div class = "leable">Лейбла</div>
+            <div class = 'but'>
+                <div class="dropdown">
+                <button class="dropbtn ob_btn"> Портфолио </button>
+                    <div class="dropdown-content">
+                        <a href="#"><button>Свадьбы</button></a>
+                        <a href="#"><button>LoveStory</button></a>
+                        <a href="#"><button>Портреты</button></a>
+                    </div>
+                </div>
+
+                <button class = 'about_me ob_btn' onclick= "location.href = '/'">Главная</button>
+                <button class = 'about_me ob_btn'  onclick= "location.href = '/about'">Обо мне</button>
+                <button class = 'contacts ob_btn'>Контакты</button>
+
+            </div>
+        </div>
+        <div class = 'box_price ob'>
+            <div class = 'price'><h1>Basic</h1></div>
+            <div class = 'price'><h1>Standart</h1></div>
+            <div class="price"><h1>Premium</h1></div>
+        </div>
+        <div class = 'box_under ob'>box_under</div>
+
+  </div>
